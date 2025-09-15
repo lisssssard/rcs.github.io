@@ -1,0 +1,316 @@
+:root{
+  --text: #000000;
+}
+
+@font-face {
+  font-family: 'Copperplate Gothic';
+  src: url('Copperplate Gothic Bold Regular.ttf') format('ttf'),
+}
+
+*{ 
+    box-sizing: border-box 
+}
+
+html{ 
+  scroll-behavior: smooth 
+}
+
+body{ 
+  margin:0;
+  font-family: "Manrope";
+  background: radial-gradient(1200px 600px at 10% -10%, #696e7a, #e9edff) fixed;
+  color: var(--text);
+  line-height: 1.5; 
+}
+
+.background-image {
+  position: fixed;
+  z-index: -1;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.dashed-line {
+  border: none;
+  border-top: 4px dashed #94adc7; 
+  margin: 20px 0;
+  font-weight: lighter;
+}
+
+.turquoise-stripe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px; 
+  height: 100%; 
+  background-color: #1efcbe;
+  border-right: 2px solid white;
+  z-index: 1001; 
+}
+    
+.logo-img {
+  height: 150px;
+  border-radius: 6px;
+  border-color: #ffffff;
+  border-width: 15px;
+}
+
+.topbar{
+
+  display:flex; 
+  flex-direction: column;
+  gap: 18px; 
+  align-items:left; 
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(15,17,21,0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: url("images/banner.jpg") center/cover no-repeat;
+  position: relative;
+  z-index: 30;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slogan {
+  font-size: 1vw;
+  color: #d5d5d5;
+  margin-top: 4px;
+}
+
+.brand-text{
+  padding-top: 70px;
+  padding-bottom: 0px;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav ul{
+  position: sticky; 
+  background-color: #a5a4e49c;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0px 0 0;
+  padding: 13px;
+  justify-content: center;
+  z-index: 1000;
+  top: 0;
+  width: auto;
+  font-family: 'Copperplate Gothic'; 
+}
+
+nav a{
+  color: var(--text); 
+  text-decoration:none; 
+  font-weight:600; 
+  font-size: clamp(14px, 1.3vw, 30px);
+  padding:8px 12px; 
+  border-radius: 999px; 
+  transition: .2s ease;
+
+}
+
+nav a:hover{ 
+  background: rgba(69, 58, 120, 0.307) 
+}
+
+nav a.active{ 
+  background: rgba(111,66,193,.22); 
+  color: #dec7ff; 
+}
+    
+h1{
+  margin:0;
+  font-size: clamp(28px, 5vw, 46px);
+  font-weight: 900;
+  text-shadow: 0 10px 30px rgba(0,0,0,.35);
+  text-align: left;
+  font-family: 'Copperplate Gothic';
+  text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+.info-box {
+  background-color: rgba(116, 132, 184, 0.39);
+  padding: 50px 40px 50px;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align:left;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 80px;
+  width: clamp(300px, 80%, 1200px);
+}
+
+.info-box p {
+  margin: 6px 0;
+  font-size: clamp(14px, 1.1vw, 22px);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.contact .phone {
+  text-align: left;
+  font-family: 'Copperplate Gothic';
+}
+
+.contact .email {
+  text-align: right;
+  font-family: 'Copperplate Gothic';
+}
+
+.location-box {
+  max-width: 1800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: clamp(300px, 80%, 1200px);
+  background-color: rgba(116, 132, 184, 0.39);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin: 30px auto;
+  gap: 150px;
+  transition: flex-direction 0.3s ease;
+}
+
+.location-image {
+  flex: 0 1 40%;
+  min-width: 150px;
+}
+
+.location-image img {
+  width: 100%;
+  height: clamp(250px, 100vh, 600px);
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.location-info {
+  font-size: clamp(14px, 1.1vw, 22px);
+  color: #000000;
+  flex: 1;
+}
+
+.location-info img {
+ display: block;
+  margin: 0 auto 20px;
+  height:13vw;
+  width: auto;
+}
+
+.address {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: clamp(14px, 1.7vw, 22px);
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  font-family: 'Copperplate Gothic';
+}
+
+.hours div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-weight: bolder;
+  font-size: clamp(14px, 1.1vw, 22px);
+}
+
+@media (max-width: 1000px) {
+  .location-box {
+    flex-direction: column;
+    gap: 40px;
+    
+  }
+
+  .location-image,
+  .location-info {
+    width: 100%;
+  }
+
+  .location-image img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+.facebook-box{ 
+  background-color: rgba(116, 132, 184, 0.39);
+  padding: 50px 40px 50px;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align:left;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: clamp(14px, 1.1vw, 22px);
+  align-items: center;
+  text-align: center;
+  width: clamp(300px, 80%, 1200px);
+}
+
+.fb-post-wrapper {
+  max-width: 100%;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-width: 12px;
+  border-color: #000000;
+}
+
+.partner-box {
+  background-color: rgba(116, 132, 184, 0.39);
+  padding: 50px 40px 50px;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align:left;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: clamp(14px, 1.1vw, 22px);
+  margin-top: 80px;
+  align-content: left;
+  width: clamp(300px, 80%, 1200px);
+}
+
+.partner-image {
+  text-align: center;
+}
+.partner-image img {
+  width: auto;
+  height: clamp(100px, 8vw, 300px);
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5vw;
+}
+
+footer{
+  padding: 34px 22px 48px; 
+  text-align:center;
+  font-family: 'Copperplate Gothic';
+}
+
+
