@@ -3,8 +3,12 @@
 }
 
 @font-face {
-  font-family: 'Copperplate Gothic';
-  src: url('Copperplate Gothic Bold Regular.ttf') format('ttf'),
+  font-family: 'CopperplateGothic';
+  src: url('CopperplateGothic.woff2') format('woff2'),
+       url('CopperplateGothic.woff') format('woff'),
+       url('CopperplateGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 *{ 
@@ -25,12 +29,13 @@ body{
 
 .background-image {
   position: fixed;
-  z-index: -1;
-  position: fixed;
-  height: auto;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* volle Bildschirmbreite */
+  height: 100vh;  /* volle Bildschirmhöhe */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
@@ -312,5 +317,6 @@ footer{
   text-align:center;
   font-family: 'Copperplate Gothic';
 }
+
 
 
