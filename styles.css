@@ -27,19 +27,24 @@ body{
   line-height: 1.5; 
 }
 
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;   /* volle Bildschirmbreite */
-  height: 100vh;  /* volle Bildschirmhöhe */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  z-index: -1;
-  pointer-events: none;
-  mix-blend-mode: overlay;
+.background-image { 
+  position: fixed; 
+  z-index: -1; 
+  position: fixed; 
+  height: auto; 
+  width: 100%; 
+  background-size: cover; 
+  background-position: center; 
+  opacity: 0.3; 
+  z-index: -1; 
+  pointer-events: none; 
+  mix-blend-mode: overlay; 
+}
+
+@supports not ( mix-blend-mode: overlay) {
+  .background-image {
+    display: none;
+  }
 }
 
 .dashed-line {
@@ -317,6 +322,7 @@ footer{
   text-align:center;
   font-family: 'Copperplate Gothic';
 }
+
 
 
 
