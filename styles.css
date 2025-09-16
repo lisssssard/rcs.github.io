@@ -4,11 +4,12 @@
 
 @font-face {
   font-family: 'CopperplateGothic';
-  src: url('CopperplateGothic.woff2') format('woff2'),
-       url('CopperplateGothic.woff') format('woff'),
-       url('CopperplateGothic.ttf') format('truetype');
+  src: url('fonts/CopperplateGothic.woff2') format('woff2'),
+       url('fonts/CopperplateGothic.woff') format('woff'),
+       url('fonts/CopperplateGothic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 *{ 
@@ -339,6 +340,7 @@ footer{
   text-align:center;
   font-family: 'Copperplate Gothic';
 }
+
 
 
 
