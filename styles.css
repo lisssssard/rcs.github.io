@@ -3,7 +3,7 @@
 }
 
 @font-face {
-  font-family: 'CopperplateGothic';
+  font-family: 'Copperplate Gothic';
   src: url('fonts/CopperplateGothic.woff2') format('woff2'),
        url('fonts/CopperplateGothic.woff') format('woff'),
        url('fonts/CopperplateGothic.ttf') format('truetype');
@@ -340,6 +340,7 @@ footer{
   text-align:center;
   font-family: 'Copperplate Gothic';
 }
+
 
 
 
