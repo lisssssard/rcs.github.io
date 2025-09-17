@@ -4,9 +4,9 @@
 
 @font-face {
   font-family: 'Copperplate Gothic';
-  src: url('fonts/CopperplateGothic.woff2') format('woff2'),
-       url('fonts/CopperplateGothic.woff') format('woff'),
-       url('fonts/CopperplateGothic.ttf') format('truetype');
+  src: url('fonts/COPGOTHH.woff2') format('woff2'),
+       url('fonts/COPGOTHH.woff') format('woff'),
+       url('fonts/COPGOTHH.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -144,30 +144,63 @@ nav ul{
   font-family: 'Copperplate Gothic'; 
 }
 
-nav a{
-  color: var(--text); 
-  text-decoration:none; 
-  font-weight:600; 
+nav a.menu-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
   font-size: clamp(14px, 1.3vw, 30px);
-  padding:8px 12px; 
-  border-radius: 999px; 
+  padding: 8px 12px;
+  border-radius: 999px;
   transition: .2s ease;
+}
+
+nav a.menu-link:hover { 
+  background: rgba(69, 58, 120, 0.307); 
+}
+
+nav a.menu-link.active { 
+  background: rgba(111,66,193,.22); 
+  color: #dec7ff; 
+}
+
+nav a.menu-link-footer {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(10px, 1vw, 30px);
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: .2s ease;
+}
+
+nav a.menu-link-footer:hover { 
+  background: rgba(69, 58, 120, 0.307); 
+}
+
+nav a.menu-link-footer.active { 
+  background: rgba(111,66,193,.22); 
+  color: #dec7ff; 
+}
+
+
+/* nav a{
+
 
 }
 
 nav a:hover{ 
-  background: rgba(69, 58, 120, 0.307) 
+
 }
 
 nav a.active{ 
-  background: rgba(111,66,193,.22); 
-  color: #dec7ff; 
-}
+
+} */
     
 h1{
   margin:0;
+  ;
   font-size: clamp(20px, 5vw, 46px);
-  font-weight: 900;
+  font-weight: bolder;
   text-shadow: 0 10px 30px rgba(0,0,0,.35);
   text-align: left;
   font-family: 'Copperplate Gothic';
@@ -378,6 +411,14 @@ footer{
   padding: 34px 22px 48px; 
   text-align:center;
   font-family: 'Copperplate Gothic';
+  font-size: clamp(5px, 0.7vw, 22px);
+}
+footer img {
+    width: auto;
+    height: clamp(40px, 2vw, 100px);
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
 }
 
 
