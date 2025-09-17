@@ -6,7 +6,7 @@
   font-family: 'Copperplate Gothic';
   src: url('fonts/COPGOTHH.woff2') format('woff2'),
        url('fonts/COPGOTHH.woff') format('woff'),
-       url('fonts/COPGOTHH.ttf') format('truetype');
+       url('fonts/COPGOTHH.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -420,6 +420,7 @@ footer img {
     border-radius: 8px;
     margin: 10px 0;
 }
+
 
 
 
