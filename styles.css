@@ -183,18 +183,18 @@ nav a.menu-link-footer.active {
 }
 
 
-/* nav a{
-
+nav a{
+ color: #000000;
 
 }
 
-nav a:hover{ 
+/*nav a:hover{ 
 
 }
 
 nav a.active{ 
 
-} */
+}*/
     
 h1{
   margin:0;
@@ -359,6 +359,26 @@ h2{
   width: clamp(300px, 80%, 1200px);
 }
 
+.facebook-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Abstand zwischen Icon und Text */
+  margin: 0;
+  font-size: clamp(20px, 5vw, 46px);
+  font-weight: bolder;
+  font-family: 'Copperplate Gothic';
+  text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+.facebook-icon {
+  height: 1em; /* passt sich der Schriftgröße an */
+  width: auto;
+}
+
 .fb-post-wrapper {
   max-width: 100%;
   align-items: center;
@@ -421,10 +441,16 @@ footer img {
     margin: 10px 0;
 }
 
+.hidden {
+  display: none;
+  transition: all 0.3s ease;
+}
 
-
-
-
-
+#impressum-text {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #444;
+  font-family: "Manrope";
+}
 
 

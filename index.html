@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RCS Computer Systems</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -43,15 +45,18 @@
   <main>
 <section id="allgemein" class="info-box">
   <h1>Über uns</h1>
-  <p>Wir sind Michael und Alexandra Meissl und führen schon seit 1996 unser Geschäft RCS Computer Systems, ein Fachgeschäft für Elektronik, insbesondere PCs, Notebooks, Drucker, Registrierkassen und vielem mehr.<br><br></p>
-  <p>Im Rahmen von Spendenaktionen haben wir auch für sozial benachteiligte Kinder während der Covid-19 Zeit und für Flüchtlingskinder aus der Ukraine diverse Notebooks oder PC-Teil Spenden gesammelt, welche wir aufgewertet und Repariert haben, und konnten so vielen Leuten in schwierigen Zeiten helfen.<br> 
+  <p>Wir sind Michael und Alexandra Meissl und führen schon seit 1996 unser Geschäft RCS Computer Systems, 
+    ein Fachgeschäft für Elektronik, insbesondere PCs, Notebooks, Drucker, Registrierkassen und vielem mehr.<br><br></p>
+  <p>Im Rahmen von <a href="pdfs/spendenaktionen.pdf" target="_blank">Spendenaktionen</a> haben wir auch für sozial benachteiligte Kinder während der Covid-19 Zeit 
+    und für Flüchtlingskinder aus der Ukraine diverse Notebooks oder PC-Teil Spenden gesammelt, welche wir 
+    aufgewertet und Repariert haben, und konnten so vielen Leuten in schwierigen Zeiten helfen.<br> 
 Zukünftige Aufrufe werden auf unserer Facebook Seite gepostet!<br><br>
 </p>
 <p>Erreichbar sind wir telefonisch, per E-Mail und über Facebook!<br></p>
     <p>Der Laden ist rund um die Uhr videoüberwacht.<br><br></p>
   <p class="contact">
     <span class="phone"><strong>Telefon:</strong> 02626 65056⠀</span>
-    <span class="email"><strong>E-Mail:</strong> office@rcs.at</span>
+    <span class="email"><strong>E-Mail:</strong> <a href="mailto:office@rcs.at">office@rcs.at</a></span>
   </p>
   
 </section>
@@ -92,7 +97,10 @@ referrerpolicy="no-referrer-when-downgrade">
 <hr class="dashed-line">
 
 <section id="facebook" class="facebook-box">
-  <h1>Facebook</h1>
+  <h1 class="facebook-heading">
+  <img src="images/facebook.png" alt="Facebook Icon" class="facebook-icon" />
+  Facebook
+</h1>
   <div>
         <p>Bleib auf dem Laufenden über Preislisten, Neuigkeiten und Spendenaufrufe.</p>
         <a class="menu-link" href="https://www.facebook.com/RCS.COMPUTER.SYSTEMS/" target="_blank">Auf Facebook ansehen</a>
@@ -124,8 +132,27 @@ referrerpolicy="no-referrer-when-downgrade">
       <img src="images/wko.svg.png" alt="WKO" width="300" height="200" />
     </a>
     <div>
-      <a href="https://firmen.wko.at/rcs-computer-systems-meissl-og-rcs-computer-systems-meissl-og/burgenland/?firmaid=d4cc5fd5-1270-4d7e-b960-d2f80599a9c8" class="menu-link-footer" target="_blank">Impressum</a>
-    </div>
+  <a href="#" class="menu-link-footer" onclick="toggleImpressum(event)">Impressum</a>
+  <div id="impressum-text" class="hidden">
+    <p>
+      Informationen gem. §§ 24, 25 MedienG, 14 UGB, 5 ECG, Art. 24 Abs. 2 VO (EU) 2022/2065<br>
+      <strong>Firmenwortlaut:</strong> RCS Computer Systems Meissl OG<br>
+      <strong>Unternehmensgegenstand:</strong> Verkauf von Computerhard- und Software, Computerreparaturen, Wartung, Beratung<br>
+      <strong>Geschäftsführer:</strong> Meissl Michael<br>
+      <strong>Firmenbuchnummer:</strong> FN 145718t<br>
+      <strong>Firmenbuchgericht:</strong> Landesgericht Eisenstadt<br>
+      <strong>UID-Nummer:</strong> ATU41165905<br>
+      <strong>Firmensitz:</strong> Michael Koch Str. 20a, 7210 Mattersburg<br>
+      <strong>Volle geografische Adresse:</strong> siehe oben<br>
+      <strong>Kontaktdaten:</strong> Tel.: +43 2626 65056, E-Mail: office@rcs.at<br>
+      <strong>Kammer:</strong> Wirtschaftskammer Burgenland, Österreich<br>
+      <strong>Aufsichtsbehörde:</strong> BH Mattersburg<br>
+      <strong>Anwendbare Vorschriften:</strong> Gewerbeordnung: <a href="https://www.ris.bka.gv.at" target="_blank">https://www.ris.bka.gv.at</a> <br>
+      <strong>Für Hinweisgeber:</strong> Hinweisgebenden Personen, die Verstöße gegen gesetzliche Vorschriften oder Compliance-Verstöße<br> 
+      melden möchten, steht das zentrale Hinweisgeberportal von willhaben zur Verfügung. Entsprechende Informationen und Kontaktstellen finden Sie <a href="mailto:hinweisgeber@rcs.at">hier</a>.<br>
+    </p>
+  </div>
+</div>
   </div>
   <div>© <span id="year"></span> RCS Computer Systems · Mattersburg, Österreich</div>
   <p><br></p>
@@ -135,4 +162,3 @@ referrerpolicy="no-referrer-when-downgrade">
 
 </body>
 </html>
-
